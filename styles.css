@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    color: #fff;
+   
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;  
+    min-height: 100vh;
+    
+}
+
+.container > div{
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.box{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0,0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box p{
+    margin: 0;
+}
+
+.box-blue{
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 30px;
+}
+.form-control small{
+    text-align: right;
+    position: absolute;
+    bottom: -24px;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    right: 0;
+    opacity: 0;
+}
+
+.form-control.error input{
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1.3px solid hsl(246, 25%, 77%);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control > img{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+    height: 20px;
+}
+
+.form-control.error img{
+  opacity: 1;
+}
+.form-control.error input::placeholder{
+    color: hsl(0, 100%, 74%);
+}
+input:focus{
+    border: 1.3px solid hsl(248, 32%, 49%) ;
+    outline: none;
+}
+
+button{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(154, 59%, 51%);
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid hsl(154, 59%, 45%);
+    box-shadow: 0 2px hsl(154, 59%, 45%);
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+button:focus{
+    outline: none;
+}
+
+button:active{
+    box-shadow: 0 0 hsl(154, 59%, 45%);
+    transform: translateY(2px);
+}
+
+
+small{
+    display: block;
+    color: #bbb;
+    margin-top: 15px;
+    font-size: 11px;
+    font-weight: 500;
+}
+small a{
+    text-decoration: none;
+    color:hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px){
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+}
